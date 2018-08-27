@@ -1,24 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an application made with love by Zo, Tiana, Manda, Maya
 
-Things you may want to cover:
+C'est une application rails qui vend en ligne des photos de chatons.La boutique va afficher les différents produits, puis les clients pourront s'inscrire, remplir leur panier, et payer l'objet avec Stripe pour le recevoir par email.
 
-* Ruby version
+Le client pourras:
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+*Mettre les produits qu'il aime dans un pannier et l'acheter par la suite.
+*s'inscrire sur le site
