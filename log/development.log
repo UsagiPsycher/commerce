@@ -3858,3 +3858,152 @@ Migrating to CreateItems (20180827102205)
   [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
 >>>>>>> f1306cd02b05b017c1b202de6462fb08d84bee71
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateItems (20180827102205)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20180827102205_create_items.rb:3
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "items" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" text, "price" decimal, "image_url" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180827102205_create_items.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180827102205"]]
+  ↳ bin/rails:9
+  [1m[35m (219.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (10.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "brown cat - head"], ["description", "1600x900"], ["price", 15.0], ["image_url", "http://iwallpapers.free.fr/upload/2012/08/17/20120817111810-cfe634b0.jpg"], ["created_at", "2018-08-27 13:19:45.800169"], ["updated_at", "2018-08-27 13:19:45.800169"]]
+  ↳ db/seeds.rb:1
+  [1m[35m (104.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:2
+  [1m[36mItem Create (0.9ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "grey cat"], ["description", "1920x1080"], ["price", 20.0], ["image_url", "http://www.fond-ecran-hd.net/pc-driver/1212.jpg"], ["created_at", "2018-08-27 13:19:45.910665"], ["updated_at", "2018-08-27 13:19:45.910665"]]
+  ↳ db/seeds.rb:2
+  [1m[35m (77.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[36mItem Create (0.7ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "grey cat - blue eyes"], ["description", "1920x1200"], ["price", 22.0], ["image_url", "http://www.fond-ecran-hd.net/pc-driver/1588.jpg"], ["created_at", "2018-08-27 13:19:45.993208"], ["updated_at", "2018-08-27 13:19:45.993208"]]
+  ↳ db/seeds.rb:3
+  [1m[35m (72.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "grumpy cat"], ["description", "1920x1080"], ["price", 20.0], ["image_url", "http://www.v3wall.com/wallpaper/1920_1080/1001/1920_1080_20100105094209331104.jpg"], ["created_at", "2018-08-27 13:19:46.077784"], ["updated_at", "2018-08-27 13:19:46.077784"]]
+  ↳ db/seeds.rb:4
+  [1m[35m (104.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:5
+  [1m[36mItem Create (0.8ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "autumn cat"], ["description", "1600x1000"], ["price", 18.0], ["image_url", "https://1.bp.blogspot.com/-KNL9kuNQjrM/WDllBoGbiJI/AAAAAAAADLk/LaEU4G1InW4dJaZ9VuvHb4jv9TcdpIhZgCLcB/s1600/Fond%2Bd%2527ecran-%2Bchat%2B05.jpg"], ["created_at", "2018-08-27 13:19:46.189387"], ["updated_at", "2018-08-27 13:19:46.189387"]]
+  ↳ db/seeds.rb:5
+  [1m[35m (96.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:6
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "siamese cat"], ["description", "1920x1200"], ["price", 18.0], ["image_url", "http://www.fond-ecran-hd.net/pc-driver/474.jpg"], ["created_at", "2018-08-27 13:19:46.292391"], ["updated_at", "2018-08-27 13:19:46.292391"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (72.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:7
+  [1m[36mItem Create (0.7ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "cozy cat"], ["description", "1200x1920"], ["price", 18.0], ["image_url", "http://www.chezmaya.com/wp-content/uploads/2017/04/fond-d-ecran-chaton-chaise-longue-vacance.jpg"], ["created_at", "2018-08-27 13:19:46.371445"], ["updated_at", "2018-08-27 13:19:46.371445"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (81.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:7
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "christmas bro-cat"], ["description", "1200x1920"], ["price", 18.0], ["image_url", "http://i67.servimg.com/u/f67/12/97/01/02/laba_w24.jpg"], ["created_at", "2018-08-27 13:19:46.459174"], ["updated_at", "2018-08-27 13:19:46.459174"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (64.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mItem Create (0.9ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "playing cat"], ["description", "1200x1600"], ["price", 16.0], ["image_url", "https://s-media-cache-ak0.pinimg.com/originals/e2/47/6d/e2476d9e1524ba9c903f33376f173857.jpg"], ["created_at", "2018-08-27 13:19:46.528613"], ["updated_at", "2018-08-27 13:19:46.528613"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (65.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mItem Create (0.6ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "flower cat"], ["description", "768x1024"], ["price", 13.0], ["image_url", "http://www.chezmaya.com/wp-content/uploads/2017/01/fond_ecran_1215-1024x768.jpg"], ["created_at", "2018-08-27 13:19:46.603530"], ["updated_at", "2018-08-27 13:19:46.603530"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (81.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mItem Create (0.8ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "siamese cat 2"], ["description", "710x1023"], ["price", 12.0], ["image_url", "http://mesptitesimages.m.e.pic.centerblog.net/d9a98b90.gif"], ["created_at", "2018-08-27 13:19:46.693095"], ["updated_at", "2018-08-27 13:19:46.693095"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (104.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mItem Create (0.7ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "snowy cat"], ["description", "640x1024"], ["price", 10.0], ["image_url", "https://goodies.pcastuces.com/vignettes/9330_l.jpg"], ["created_at", "2018-08-27 13:19:46.803024"], ["updated_at", "2018-08-27 13:19:46.803024"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (60.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mItem Create (0.9ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "twins brown cat"], ["description", "541x722"], ["price", 8.0], ["image_url", "http://www.weesk.com/wallpaper/animaux/chats-chatons/chats-chatons-804/chats-chatons-804-720px.jpg"], ["created_at", "2018-08-27 13:19:46.872615"], ["updated_at", "2018-08-27 13:19:46.872615"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (88.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[36mItem Create (0.7ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "snow tiger cat"], ["description", "541x722"], ["price", 8.0], ["image_url", "http://www.weesk.com/wallpaper/animaux/chats-chatons/chats-chatons-36/chats-chatons-36-720px.jpg"], ["created_at", "2018-08-27 13:19:46.968966"], ["updated_at", "2018-08-27 13:19:46.968966"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (90.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "lazy cat"], ["description", "469x750"], ["price", 6.0], ["image_url", "http://img.hebus.com/hebus_2011/11/13/preview/111113155654_46.jpg"], ["created_at", "2018-08-27 13:19:47.065369"], ["updated_at", "2018-08-27 13:19:47.065369"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (86.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mItem Create (0.7ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "tiger cat"], ["description", "1080x1920"], ["price", 20.0], ["image_url", "http://www.1zoom.me/big2/441/283571-alexfas01.jpg"], ["created_at", "2018-08-27 13:19:47.157524"], ["updated_at", "2018-08-27 13:19:47.157524"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (48.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mItem Create (0.6ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "black cat - head"], ["description", "1200x1920"], ["price", 22.0], ["image_url", "http://images.annuaire-animaux.net/fonds-ecran/maxi/chat-chartreux.jpg"], ["created_at", "2018-08-27 13:19:47.213262"], ["updated_at", "2018-08-27 13:19:47.213262"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (71.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "black cat - center"], ["description", "1440x2560"], ["price", 25.0], ["image_url", "http://www.fond-ecran-hd.net/pc-driver/1321.jpg"], ["created_at", "2018-08-27 13:19:47.287550"], ["updated_at", "2018-08-27 13:19:47.287550"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (63.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[36mItem Create (0.7ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "bro-cats"], ["description", "768x1024"], ["price", 13.0], ["image_url", "http://www.paradis-des-chats.com/medias/images/fondecran08.jpg"], ["created_at", "2018-08-27 13:19:47.356356"], ["updated_at", "2018-08-27 13:19:47.356356"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (82.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:20
+  [1m[36mItem Create (0.2ms)[0m  [1m[32mINSERT INTO "items" ("title", "description", "price", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "cute cat"], ["description", "768x1024"], ["price", 13.0], ["image_url", "http://www.unesourisetmoi.info/wallpaper_7/images/chat-et-ours.jpg"], ["created_at", "2018-08-27 13:19:47.442263"], ["updated_at", "2018-08-27 13:19:47.442263"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (45.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:20
